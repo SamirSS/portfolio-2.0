@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+	
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Samir Shekhawat.</title>
+		<link rel="stylesheet" href="main.css" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+	</head>
+		
+	<body class="home"> 
+		<main> 
+			<h1><p id="name"></p></h1>
+			<div class="text" id="typedtext">
+ 				<p>product designer.<br>nyu attendee.<br>flipping between chicago and nyc.<br><div class="drinks">your go-to food & drink guy.</div></p>
+			</div>
+			<a class="button" href="01.html">VIEW MY WORK</a>
+			<p class="contact">Find me on <a href="https://instagram.com/samir_sheik/" target="_blank" id="insta">the gram</a>, occasionally <a href="https://twitter.com/samir_shekhawat" target="_blank" id="twitter"> tweeting</a>, often <a href="http://dribbble.com/sshekhawat" target="_blank" id="dribbble">dribbbling</a>, or on <a href="https://www.linkedin.com/in/samirss/" target="_blank" id="linkedin">linkedin</a> for some reason.<br>You can <a href="mailto:samir.shekhawat4@gmail.com" id="email">email</a> me too.</p>
+		</main>
+	</body>
+	
+	<script>
+		var i = 0;
+		var name_text = 'Samir Shekhawat.';
+		var speed = 120;
+
+		function typewriterAnimation() {
+		  if (i < name_text.length) {
+		    document.getElementById("name").innerHTML += name_text.charAt(i);
+		    i++;
+		    setTimeout(typewriterAnimation, speed);
+		  }
+		}
+		
+		typewriterAnimation();
+	</script>
+	
+
+</html>
